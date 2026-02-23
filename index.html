@@ -77,13 +77,16 @@
         .timeline-dot { position: absolute; left: 20px; top: 0; width: 24px; height: 24px; background: var(--bg); border: 4px solid var(--primary); border-radius: 50%; z-index: 5; }
         .timeline-card { background: var(--card-bg); padding: 30px; border-radius: 15px; }
         .tl-date { color: var(--primary); font-weight: 700; font-size: 0.9rem; display: block; margin-bottom: 10px; }
+        .tl-company { color: var(--text-dim); font-style: italic; margin-bottom: 10px; }
+        .tl-desc { color: var(--text-dim); font-size: 0.95rem; line-height: 1.6; }
 
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .project-card { background: var(--card-bg); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); transition: 0.4s; }
         .project-card:hover { border-color: var(--primary); }
         .project-tags span { font-size: 0.75rem; background: #222; padding: 4px 12px; border-radius: 4px; color: #888; margin-right: 5px; }
 
-        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        .contact-container { display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: center; }
+        .contact-info p { margin-bottom: 15px; color: var(--text-dim); }
         .contact-cta { background: linear-gradient(135deg, var(--card-bg) 0%, #202020 100%); padding: 50px; border-radius: 30px; text-align: center; border: 1px solid var(--primary); }
 
         .footer { text-align: center; padding: 40px; color: #555; border-top: 1px solid #1a1a1a; }
@@ -115,7 +118,7 @@
         <div class="typed-container">
             <span class="typed-text" id="typed"></span><span class="cursor">|</span>
         </div>
-        <p class="hero-sub">MSc International Business Management • Newcastle, UK</p>
+        <p class="hero-sub">MSc International Business Management graduate targeting Junior PMO & Operations roles in the UK.</p>
         <div class="hero-btns">
             <a href="#about" class="btn btn-primary">Discover More</a>
             <a href="#contact" class="btn btn-outline">Hire Me</a>
@@ -139,10 +142,13 @@
         </div>
         <div class="about-text">
             <h3>Project & Operations Professional</h3>
-            <p>I'm a results-driven professional with <strong>4+ years of experience</strong> supporting projects across biologics and hospitality sectors. I bring structure, clarity and momentum to cross-functional teams.</p>
+            <p>Results-driven professional with <strong>4 years of project management experience</strong> and proven capabilities in project support, stakeholder engagement, and operational delivery.</p>
+            <p>I combine an <strong>MSc in International Business Management</strong> from Northumbria University with hands-on experience in coordinating cross-functional teams and supporting PMO functions in fast-paced environments.</p>
             <div class="about-facts">
-                <div class="fact"><span class="fact-num">4+</span><span class="fact-label">Years Exp.</span></div>
-                <div class="fact"><span class="fact-num">MSc</span><span class="fact-label">Northumbria</span></div>
+                <div class="fact"><span class="fact-num">4</span><span class="fact-label">Years PM Experience</span></div>
+                <div class="fact"><span class="fact-num">MSc</span><span class="fact-label">Northumbria Univ.</span></div>
+                <div class="fact"><span class="fact-num">B.Tech</span><span class="fact-label">Chemical Engineering</span></div>
+                <div class="fact"><span class="fact-num">UK</span><span class="fact-label">Based (Newcastle)</span></div>
             </div>
         </div>
     </div>
@@ -150,28 +156,31 @@
 
 <section class="skills" id="skills">
     <div class="section-header">
-        <h2>My <span>Skills</span></h2>
+        <h2>Key <span>Skills</span></h2>
         <div class="underline"></div>
     </div>
     <div class="skills-grid">
         <div class="skill-card">
-            <h4>Project Coordination</h4>
+            <h4>Project Management</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;margin-bottom:10px;">Planning, Risk Management, Stakeholder Coordination</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+        <div class="skill-card">
+            <h4>Technical Proficiency</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;margin-bottom:10px;">Excel (Advanced), SPSS, SQL, Python</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-card">
+            <h4>Leadership & Ops</h4>
+            <p style="color:var(--text-dim);font-size:0.9rem;margin-bottom:10px;">Team Management, Process Improvement, Quality Service</p>
             <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
-        </div>
-        <div class="skill-card">
-            <h4>Data Analysis (SPSS)</h4>
-            <div class="skill-bar"><div class="skill-fill" data-w="82"></div></div>
-        </div>
-        <div class="skill-card">
-            <h4>Stakeholder Comms</h4>
-            <div class="skill-bar"><div class="skill-fill" data-w="87"></div></div>
         </div>
     </div>
 </section>
 
 <section class="experience" id="experience">
     <div class="section-header">
-        <h2>My <span>Experience</span></h2>
+        <h2>Professional <span>Experience</span></h2>
         <div class="underline"></div>
     </div>
     <div class="timeline">
@@ -179,16 +188,22 @@
             <div class="timeline-dot"></div>
             <div class="timeline-card">
                 <span class="tl-date">Nov 2024 – Present</span>
-                <h4>Business Manager</h4>
-                <p>Creams Cafe • Newcastle, UK</p>
+                <h4>Supervisor</h4>
+                <p class="tl-company">Creams Cafe • Newcastle, UK</p>
+                <div class="tl-desc">
+                    <p>Leading 10+ staff, managing project-style initiatives (rotas, stock planning) and driving a 30% uplift in sales through process improvements.</p>
+                </div>
             </div>
         </div>
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-card">
-                <span class="tl-date">2022 – 2024</span>
-                <h4>Project Support – Biologics</h4>
-                <p>Genesys Biologics</p>
+                <span class="tl-date">Jan 2021 – Aug 2024</span>
+                <h4>Project Executive</h4>
+                <p class="tl-company">Genesys Biologics • Hyderabad, India</p>
+                <div class="tl-desc">
+                    <p>Supported delivery of multiple concurrent B2B projects, coordinated between RD/Production/Quality teams, and managed complex documentation.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -201,14 +216,19 @@
     </div>
     <div class="projects-grid">
         <div class="project-card">
-            <h4>Rota Optimisation</h4>
-            <p>Redesigned staffing rota using demand data analysis at Creams Cafe.</p>
-            <div class="project-tags"><span>Excel</span><span>Ops</span><span>PMO</span></div>
+            <h4>Rota & Stock Optimisation</h4>
+            <p>Introduced planning routines that reduced operational bottlenecks during peak periods in a high-footfall environment.</p>
+            <div class="project-tags"><span>Operations</span><span>Efficiency</span></div>
         </div>
         <div class="project-card">
-            <h4>B2B Coordination</h4>
-            <p>Managed documentation and timelines for biologics projects.</p>
-            <div class="project-tags"><span>B2B</span><span>Docs</span></div>
+            <h4>B2B Biologics Support</h4>
+            <p>Managed technical coordination and documentation for simultaneous cross-functional projects.</p>
+            <div class="project-tags"><span>Technical</span><span>Coordination</span></div>
+        </div>
+        <div class="project-card">
+            <h4>Data Science Analysis</h4>
+            <p>Certified Data Scientist using Python, SQL, and Machine Learning to prepare business cases.</p>
+            <div class="project-tags"><span>Python</span><span>Data</span></div>
         </div>
     </div>
 </section>
@@ -219,21 +239,27 @@
         <div class="underline"></div>
     </div>
     <div class="contact-container">
+        <div class="contact-info">
+            <p><strong>Email:</strong> venugopalgoudpujari@gmail.com</p>
+            <p><strong>Phone:</strong> +44 7818990242</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/venugopalgoud17</p>
+            <p style="margin-top:20px;">I am immediately available for Junior PMO, Project Support, or Operations roles. Willing to undergo BPSS clearance.</p>
+        </div>
         <div class="contact-cta">
             <h3>Let's Work Together</h3>
-            <p>Available immediately in Newcastle, UK</p>
-            <a href="mailto:your-email@example.com" class="btn btn-primary">Send Email</a>
+            <p>Based in Newcastle Upon Tyne • Available for Hybrid Work</p>
+            <a href="mailto:venugopalgoudpujari@gmail.com" class="btn btn-primary">Send Email</a>
         </div>
     </div>
 </section>
 
 <footer class="footer">
-    <p>© 2026 Venugopal Goud Pujari • Portfolio</p>
+    <p>© 2026 Venugopal Goud Pujari • Newcastle, UK</p>
 </footer>
 
 <script>
     const typedTextElement = document.getElementById('typed');
-    const textArray = ["Junior PMO Support", "Operations Professional", "Project Coordinator"];
+    const textArray = ["Project Management Professional", "MSc International Business Management", "Junior PMO & Operations Candidate"];
     let textArrayIndex = 0; let charIndex = 0;
 
     function type() {
